@@ -7,3 +7,4 @@ pydantic-settings
 python-dotenv
 agno
 openai
+google-generativeai
