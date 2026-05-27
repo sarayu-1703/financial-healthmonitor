@@ -15,4 +15,8 @@ def get_db():
     try:
         yield db
     finally:
+<<<<<<< HEAD
         db.close()
+=======
+        db.close()
+>>>>>>> 2c4f512 (Final Financial Health Monitor)

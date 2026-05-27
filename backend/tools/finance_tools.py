@@ -33,9 +33,14 @@ def spend_by_category(month: str):
             category,
             ABS(SUM(amount)) AS total_spent
         FROM transactions
+<<<<<<< HEAD
         WHERE
             amount < 0
             AND TO_CHAR(date, 'YYYY-MM') = :month
+=======
+        WHERE amount < 0
+        AND TO_CHAR(date, 'YYYY-MM') = :month
+>>>>>>> 2c4f512 (Final Financial Health Monitor)
         GROUP BY category
     """)
 
@@ -51,10 +56,16 @@ def compare_months(current_month: str, previous_month: str):
             TO_CHAR(date, 'YYYY-MM') AS month,
             ABS(SUM(amount)) AS total_spent
         FROM transactions
+<<<<<<< HEAD
         WHERE
             amount < 0
             AND TO_CHAR(date, 'YYYY-MM')
             IN (:current_month, :previous_month)
+=======
+        WHERE amount < 0
+        AND TO_CHAR(date, 'YYYY-MM')
+        IN (:current_month, :previous_month)
+>>>>>>> 2c4f512 (Final Financial Health Monitor)
         GROUP BY month
     """)
 
@@ -67,4 +78,8 @@ def compare_months(current_month: str, previous_month: str):
             }
         )
 
+<<<<<<< HEAD
         return [dict(row._mapping) for row in result]
+=======
+        return [dict(row._mapping) for row in result]
+>>>>>>> 2c4f512 (Final Financial Health Monitor)

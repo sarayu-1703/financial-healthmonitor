@@ -82,4 +82,8 @@ VALUES
 with open("data/transactions.sql", "w") as f:
     f.writelines(sql_lines)
 
+<<<<<<< HEAD
 print("Generated transactions.sql successfully!")
+=======
+print("Generated transactions.sql successfully!")
+>>>>>>> 2c4f512 (Final Financial Health Monitor)
