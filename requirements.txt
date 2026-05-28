@@ -8,5 +8,4 @@ python-dotenv
 agno
 openai
 google-genai
-python-dotenv
-add python-dotenv dependency
+
