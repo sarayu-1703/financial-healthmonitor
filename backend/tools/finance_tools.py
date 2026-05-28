@@ -78,8 +78,5 @@ def compare_months(current_month: str, previous_month: str):
             }
         )
 
-<<<<<<< HEAD
+
         return [dict(row._mapping) for row in result]
-=======
-        return [dict(row._mapping) for row in result]
->>>>>>> 2c4f512 (Final Financial Health Monitor)
